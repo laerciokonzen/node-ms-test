@@ -4,7 +4,7 @@
   "description": "Teste de aplicação para ser usada como micro-service",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/laerciokonzen/node-ms-test/issues"
   },
-  "homepage": "https://github.com/laerciokonzen/node-ms-test#readme"
+  "homepage": "https://github.com/laerciokonzen/node-ms-test#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
