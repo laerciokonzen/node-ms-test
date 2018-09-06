@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/laerciokonzen/node-ms-test#readme",
   "dependencies": {
-    "restify": "^7.2.1"
+    "express": "^4.16.3"
   },
   "devDependencies": {
     "@types/node": "^10.9.4",

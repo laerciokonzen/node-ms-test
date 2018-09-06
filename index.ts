@@ -1,18 +1,10 @@
-import process = require('process');
+const express = require('express');
+const app = express();
 
-const porta = process.env.PORT || 8080;
+app.get('/', function (req:any, res:any) {
+  res.send('Hello World!');
+});
 
-const restify = require('restify');
-
-function respond(req:any, res:any, next:any) {
-  res.send('hello ' + req.params.name);
-  next();
-}
-
-const server = restify.createServer();
-server.get('/hello/:name', respond);
-server.head('/hello/:name', respond);
-
-server.listen(porta, () =>{
-  console.log('%s listening at %s', server.name, server.url);
+app.listen( process.env.PORT || 8080, function () {
+  console.log('Example app listening http://localhost:' +  process.env.PORT || 8080);
 });
